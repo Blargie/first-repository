@@ -26,7 +26,11 @@ public class AddressBook {
         BuddyInfo buddyTodd = new BuddyInfo("Todd", "Toronto", 416);
         addressBook.addBuddy(buddyTodd);
 
+        BuddyInfor buddyTed = new BuddyInfo("Ted", "Montreal", 514);
+        addressBook.addBuddy(buddyTed);
+
+        addressBook.removeBuddy(2);
         addressBook.removeBuddy(1);
-        addressBook.removeBuddy(0);
+        addressBook.removeBuddy(0);      
     }
 }
