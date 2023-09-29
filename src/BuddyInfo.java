@@ -9,6 +9,10 @@ public class BuddyInfo {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public static void main(String[] args) {
         BuddyInfo Bob = new BuddyInfo("Bob", "Carleton", 647);
         System.out.println("Hello " + Bob.name + "!");

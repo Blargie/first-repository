@@ -18,6 +18,12 @@ public class AddressBook {
         return null;
     }
 
+    public void printBuddies(){
+        for(int i = 0; i < buddies.size(); i++){
+            System.out.println(buddies.get(i).getName());
+        }
+    }
+
     public static void main(String[] args) {
         BuddyInfo buddyTom = new BuddyInfo("Tom", "Carleton", 613);
         AddressBook addressBook = new AddressBook();
@@ -28,6 +34,8 @@ public class AddressBook {
 
         BuddyInfo buddyTed = new BuddyInfo("Ted", "Montreal", 514);
         addressBook.addBuddy(buddyTed);
+
+        addressBook.printBuddies();
 
         addressBook.removeBuddy(2);
         addressBook.removeBuddy(1);
